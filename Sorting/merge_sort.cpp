@@ -8,11 +8,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-using ll = long long;
-
 void merge(vector<int> &array, int start1, int end1, int start2, int end2) {
-  int tmp[end1-start1+end2-start2+20];
-  memset(tmp, sizeof(tmp), 0);
+  int tmp[end1-start1+end2-start2+2];
   if(start1 >= end1 || start2 >= end2) return;
   int j = start2, i = start1;
   int ind = 0;
