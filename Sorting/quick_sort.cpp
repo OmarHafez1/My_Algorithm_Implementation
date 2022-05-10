@@ -8,8 +8,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-using ll = long long;
-
 int partition(vector<int> &array, int start, int end) {
   int j = start;
   for(int i = start; i < end; i++) {
